@@ -13,7 +13,7 @@
  */
 
 function hijackGoogleLogo() {
-  // your code goes in here
+  const logo = document.getElementById('logo-default');
+  logo.style.backgroundImage = "url('https://www.hackyourfuture.dk/static/logo-dark.svg')";
 }
-
 hijackGoogleLogo();
