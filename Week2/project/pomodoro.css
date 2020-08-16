@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: rgb(31, 85, 92);
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+#container {
+  width: 100%;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#workSession {
+  margin-top: 0.625rem;
+}
+#first-table {
+  border-spacing: 1.9rem;
+}
+#second-table {
+  border-spacing: 2.5rem;
+}
+.counter {
+  width: 25%;
+  display: block;
+  text-align: center;
+  border-radius: 30px;
+  border: 5px solid rgb(19, 54, 58);
+  padding: 0.5rem 2rem;
+}
+.btn {
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+#countdown {
+  font-family: 'Orbitron', sans-serif;
+}

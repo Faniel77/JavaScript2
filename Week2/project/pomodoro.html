@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/818ee812ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pomodoro.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <div id="header">
+          <h1 class="first-header">Pomodoro Clock</h1>
+          <h2 class="sub-header">Session Length</h2>
+        </div>
+        <div id="second-container">
+          <table id="first-table">
+            <tbody>
+              <td>
+                <button id="down" class="btn">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </td>
+              <td><h3 id="workSession">25</h3></td>
+              <td>
+                <button id="up" class="btn">
+                  <i class="fas fa-arrow-up"></i>
+                </button>
+              </td>
+            </tbody>
+          </table>
+        </div>
+        <div class="counter">
+          <h2 class="sub-header">Session</h2>
+          <h1 id="countdown">25:00</h1>
+        </div>
+        <div id="play-pause">
+          <table id="second-table">
+            <tbody>
+              <td>
+                <button id="play" class="btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </td>
+              <td>
+                <button id="stop" class="btn">
+                  <i class="fas fa-stop"></i>
+                </button>
+              </td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>
