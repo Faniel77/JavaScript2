@@ -20,11 +20,11 @@ const favFood = document.getElementById('fav-food');
 favFood.textContent = 'Fish';
 const homeTown = document.getElementById('hometown');
 homeTown.textContent = 'Asmara, Eritrea';
-const liElement = document.querySelectorAll('li');
+const liElements = document.querySelectorAll('li');
 
 //loop through the li's and add them a class name
-for (let i = 0; i < liElement.length; i++) {
-  liElement[i].className = 'list-item';
+for (let i = 0; i < liElements.length; i++) {
+  liElements[i].className = 'list-item';
 }
 const myPhoto = document.createElement('img');
 myPhoto.src = 'photo.jpg'; //add photo source
