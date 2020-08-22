@@ -19,3 +19,4 @@ const x = (function () {
 })();
 
 x();
+The output will be 12. The value of the variable 'x' is re-assigned inside the function and when the return function is looks inside its scope or the scope of its outer function.
