@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #8e0e00;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 1.125rem;
+  margin-left: 20%;
+}
+#container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  background: #f7f7f7;
+  height: 35.813rem;
+  width: 22.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.25rem;
+}
+#header {
+  background: #1f030c;
+  color: white;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+#form {
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+#amount {
+  width: 70%;
+  padding: 0.3rem 0.5rem;
+  border: 2px inset rgba(28, 110, 164, 0.36);
+}
+#amount:focus {
+  outline: none;
+  border: 3px solid #2980b9;
+}
+#service {
+  width: 90%;
+  padding: 0.813rem;
+  border: 2px inset rgba(28, 110, 164, 0.36);
+  font-size: 1.563rem;
+  /* background: #56556e; */
+}
+#service option {
+  background: #56556e;
+  color: white;
+}
+#numOfPeople {
+  width: 80%;
+  padding: 0.4rem 0.6rem;
+  border: 2px inset rgba(28, 110, 164, 0.36);
+}
+#btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #ad133a;
+  color: white;
+  border-radius: 0.3rem;
+  width: 12.5rem;
+  height: 3.125rem;
+  margin: 1.875rem 1.875rem 0 1.875rem;
+}
+#btn:hover {
+  background: #6e6d6d;
+}
+#totalTip {
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  font-size: 1rem;
+  text-align: center;
+}
