@@ -28,11 +28,30 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
-  // make array
-  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+  for (let i = startIndex; i <= stopIndex; i++) {
+    numbers.push(i);
+  }
+  numbers.forEach((num) => {
+    if (num % 3 === 0) {
+      threeCallback(num);
+    }
+    if (num % 5 === 0) {
+      fiveCallback(num);
+    }
+  });
+}
+function sayThree(denominator) {
+  return function (num) {
+    console.log(`${num} is divisible by ${denominator}`);
+  };
+}
+function sayFive(denominator) {
+  return function (num) {
+    console.log(`${num} is divisible by ${denominator}`);
+  };
 }
 
-threeFive(10, 15, sayThree, sayFive);
+threeFive(10, 15, sayThree(3), sayFive(5));
 
 // Should create an array [10,11,12,13,14,15]
 // and call sayFive, sayThree, sayThree, sayFive
