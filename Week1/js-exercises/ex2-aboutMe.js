@@ -28,6 +28,7 @@ favFood.textContent = 'Fish';
 const homeTown = document.getElementById('hometown');
 homeTown.textContent = 'Asmara, Eritrea';
 const liElements = document.querySelectorAll('li');
+<<<<<<< HEAD
 // liElements.style.listStyleType = 'none';
 
 // loop through the li's and add them a class name
@@ -36,6 +37,12 @@ for (let i = 0; i < liElements.length; i++) {
   liElements[i].style.listStyleType = 'none';
   liElements[i].style.fontSize = '1.5rem';
   liElements[i].style.padding = '0.8rem';
+=======
+
+//loop through the li's and add them a class name
+for (let i = 0; i < liElements.length; i++) {
+  liElements[i].className = 'list-item';
+>>>>>>> df1a0bedd977d6d72a0e60f6f558fc670060d3e9
 }
 const myPhoto = document.createElement('img');
 myPhoto.src = 'photo.jpg'; // add photo source
