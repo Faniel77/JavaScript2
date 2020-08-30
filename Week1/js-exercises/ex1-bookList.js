@@ -69,31 +69,6 @@ function createBookList(books) {
     ulElement.style.display = 'flex';
     document.body.style.margin = '8px';
   }
+  return ulElement;
 }
-ulElement = createBookList(books);
-
-// function createBookList(books) {
-
-//   // your code goes in here, return the ul element
-// }
-
-// const books = [{
-//     title: 'The Design of Everyday Things',
-//     author: 'Don Norman',
-//     alreadyRead: false
-//   },
-//   {
-//     title: 'The Most Human Human',
-//     author: 'Brian Christian',
-//     alreadyRead: true
-//   },
-//   {
-//     title: 'The Pragmatic Programmer',
-//     author: 'Andrew Hunt',
-//     alreadyRead: true
-//   }
-// ];
-
-// let ulElement = createBookList(books);
-
-// document.querySelector("#bookList").appendChild(ulElement);
+createBookList(books);
