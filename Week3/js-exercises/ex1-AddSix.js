@@ -11,8 +11,9 @@ Call the function three times. The return values should be:
  */
 
 function createBase(x) {
-  return function myFun(y) {
-    return x + y;
+  return function () {
+     x = x+9;
+    return x;
   };
 }
 
